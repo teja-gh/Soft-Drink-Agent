@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "Salesforce DX": {
+      "command": "npx",
+      "args": ["-y", "@salesforce/mcp",
+              "--orgs", "DEFAULT_TARGET_ORG",
+              "--toolsets", "orgs,metadata,data,users",
+              "--tools", "run_apex_test",
+              "--allow-non-ga-tools"]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+
+  }
